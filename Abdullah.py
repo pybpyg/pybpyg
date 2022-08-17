@@ -131,15 +131,10 @@ def login():
 	except (KeyError,IOError):
 		os.system('clear')
 		print logo
-		jalan(' \033[1;92mWarning: \033[1;97mDo Not Use Your Personal Account' )
-		jalan(' \033[1;92m   Note: \033[1;97mUse a New Account To Login' )
-		print "\033[1;95m♡──────────•◈•──────────♡\033[1;96mBlackMafia\033[1;95m♡──────────•◈•──────────♡"
-
-			br.open('https://m.facebook.com')
-		except mechanize.URLError:
+		
+		print "\033[1;95m♡──────────•◈•──────────♡\033[1;96mBlackMafia\033[1;95m♡──────────•◈•─────────
 			print"\n\x1b[1;96mThere is no internet connection"
-			keluar()
-		br._factory.is_html = True
+		
 		br.select_form(nr=0)
 		br.form['email'] = id
 		br.form['pass'] = pwd
